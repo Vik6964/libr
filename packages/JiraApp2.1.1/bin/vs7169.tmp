@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JiraAddin</name>
+    </assembly>
+    <members>
+        <member name="T:JiraAddin.Connect">
+            <summary>The object for implementing an Add-in.</summary>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JiraAddin.Connect.#ctor">
+            <summary>Implements the constructor for the Add-in object. Place your initialization code within this method.</summary>
+        </member>
+        <member name="M:JiraAddin.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param term='application'>Root object of the host application.</param>
+            <param term='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param term='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JiraAddin.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
+            <param term='disconnectMode'>Describes how the Add-in is being unloaded.</param>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JiraAddin.Connect.OnAddInsUpdate(System.Array@)">
+            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:JiraAddin.Connect.OnStartupComplete(System.Array@)">
+            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JiraAddin.Connect.OnBeginShutdown(System.Array@)">
+            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JiraAddin.Connect.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
+            <param term='commandName'>The name of the command to determine state for.</param>
+            <param term='neededText'>Text that is needed for the command.</param>
+            <param term='status'>The state of the command in the user interface.</param>
+            <param term='commandText'>Text requested by the neededText parameter.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:JiraAddin.Connect.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+            <summary>Implements the Exec method of the IDTCommandTarget interface. This is called when the command is invoked.</summary>
+            <param term='commandName'>The name of the command to execute.</param>
+            <param term='executeOption'>Describes how the command should be run.</param>
+            <param term='varIn'>Parameters passed from the caller to the command handler.</param>
+            <param term='varOut'>Parameters passed from the command handler to the caller.</param>
+            <param term='handled'>Informs the caller if the command was handled or not.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetIssue(System.String,System.String)">
+            <summary>
+            Return single issue for the given project and issue key
+            </summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetIssues(System.String)">
+            <summary>Returns all issues for the given project</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetIssues(System.String,System.String)">
+            <summary>Returns all issues of the specified type for the given project</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetSubTasksOfIssue(System.String,System.String,System.String)">
+            <summary>
+            Return all subtasks of the issue
+            </summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.LoadIssue(System.String)">
+            <summary>Returns the issue identified by the given ref</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.LoadIssue(JiraAddin.IssueRef)">
+            <summary>Returns the issue identified by the given ref</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.CreateIssue(System.String,System.String,System.String)">
+            <summary>Creates an issue of the specified type for the given project</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.UpdateIssue(JiraAddin.Issue)">
+            <summary>Updates the given issue on the remote system</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.DeleteIssue(JiraAddin.IssueRef)">
+            <summary>Deletes the given issue from the remote system</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetComments(JiraAddin.IssueRef)">
+            <summary>Returns all comments for the given issue</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.CreateComment(JiraAddin.IssueRef,System.String)">
+            <summary>Adds a comment to the given issue</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.DeleteComment(JiraAddin.IssueRef,JiraAddin.Comment)">
+            <summary>Deletes the given comment</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetAttachments(JiraAddin.IssueRef)">
+            <summary>Return all attachments for the given issue</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.CreateAttachment(JiraAddin.IssueRef,System.IO.Stream,System.String)">
+            <summary>Creates an attachment to the given issue</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.DeleteAttachment(JiraAddin.Attachment)">
+            <summary>Deletes the given attachment</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.GetIssueLinks(JiraAddin.IssueRef)">
+            <summary>Returns all links for the given issue</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.LoadIssueLink(JiraAddin.IssueRef,JiraAddin.IssueRef,System.String)">
+            <summary>Returns the link between two issues of the given relation</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.CreateIssueLink(JiraAddin.IssueRef,JiraAddin.IssueRef,System.String)">
+            <summary>Creates a link between two issues with the given relation</summary>
+        </member>
+        <member name="M:JiraAddin.IJiraClient.DeleteIssueLink(JiraAddin.IssueLink)">
+            <summary>Removes the given link of two issues</summary>
+        </member>
+    </members>
+</doc>

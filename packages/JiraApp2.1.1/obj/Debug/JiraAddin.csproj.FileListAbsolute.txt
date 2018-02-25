@@ -1,0 +1,14 @@
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\JiraAddin.dll
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\JiraAddin.pdb
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\JiraAddin.xml
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\Atlassian.Jira.dll
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\CookComputing.XmlRpcV2.dll
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\RestSharp.dll
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\TechTalk.JiraRestClient.dll
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\Atlassian.Jira.pdb
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\Atlassian.Jira.xml
+D:\aDnan\Projects\JiraAddin\JiraAddin\bin\Debug\RestSharp.xml
+D:\aDnan\Projects\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csproj.ResolveComReference.cache
+D:\aDnan\Projects\JiraAddin\JiraAddin\obj\Debug\JiraAddin.dll
+D:\aDnan\Projects\JiraAddin\JiraAddin\obj\Debug\JiraAddin.pdb
+D:\aDnan\Projects\JiraAddin\JiraAddin\obj\Debug\JiraAddin.csprojResolveAssemblyReference.cache
