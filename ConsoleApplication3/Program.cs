@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace ConsoleApplication3
+namespace MagicApp
 {
     class CourierApiToken
     {

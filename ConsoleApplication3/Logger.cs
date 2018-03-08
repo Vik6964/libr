@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 
-namespace ConsoleApplication3
+namespace MagicApp
 {
     /// <summary>Authenth class.</summary>
     public class Logger

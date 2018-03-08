@@ -1,7 +1,7 @@
 ﻿/*using System.IdentityModel.Tokens.Jwt;
 using RestSharp.Authenticators;
 
-namespace ConsoleApplication3
+namespace MagicApp
 {
     public class JWTSample
     {
