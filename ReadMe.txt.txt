@@ -5,9 +5,9 @@ single thread~~~
 FTP client class for Windows and Unix
 Simple HTTP web request and responce (training before JWT authorization)
 
-multi thread~~~
+fsdfsdfsdfsdmulti thread~~~fdsfsd
 
-
+dfasfcsdf
 2019
 (c)Alexander Mashentsev
 312312312377777777777777777
