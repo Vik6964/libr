@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Net;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
 
 namespace ConsoleApplication3
 {
@@ -158,7 +156,7 @@ namespace ConsoleApplication3
 
     public class mainProgram
     {
-        public static void Main(string[] args)
+        public static void loool(string[] args)
         {
             Mikrowave actionMikrowave = new Mikrowave(" *BRAAAAAINS* ", " Запечёные ");
             Console.WriteLine($"Запекает? {actionMikrowave.Bakes} \nНаходится на Кухне? {actionMikrowave.Subject}");

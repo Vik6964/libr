@@ -1,4 +1,31 @@
-﻿/*using System;
+﻿using System;
+using System.Net;
+
+namespace ConsoleApplication3
+{
+    class CourierApiToken
+    {
+        public static HttpWebRequest WebRequest { get; set; }
+        public string header;
+
+        public class Program
+        {
+            private static void Main(string[] args)
+            {
+                Logger MAIN = new Logger();
+                MAIN.SetServer();
+                MAIN.GetToken();
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+
+
+
+
+/*using System;
 using System.IO;
 using System.Net;
 using System.Text;

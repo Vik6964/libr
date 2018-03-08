@@ -95,6 +95,7 @@
   <ItemGroup>
     <Compile Include="FtpClient.cs" />
     <Compile Include="HttpListener.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="Patterns\Singleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
