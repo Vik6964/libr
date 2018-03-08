@@ -27,7 +27,10 @@ namespace MagicApp
         {
             _mainUrl = serv == "test" ? "https://courier-test.esphere.ru" : "https://courier-api.esphere.ru/";
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Type FormUrlEnccodedContent IEnumerable(KEYVALYEPAIR{string, string})</returns>
         private FormUrlEncodedContent AuthContent()
         {
             string username;
