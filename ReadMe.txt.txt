@@ -7,7 +7,11 @@ Simple HTTP web request and responce (training before JWT authorization)
 
 fsdfsdfsdfsdmulti thread~~~fdsfsd
 
+<<<<<<< HEAD
 123
+=======
+52345243523452345
+>>>>>>> asa
 2019
 (c)Alexander Mashentsev
 312312312377777777777777777
