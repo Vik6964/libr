@@ -1,12 +1,12 @@
-﻿Library with classes and methods for study and use some of them in my current and future projects
+﻿Library with classes and methods for study and using some of them in the future.
 Allready have:
 
-FTP client class for Windows and Unix
-Simple HTTP web request and responce (training before JWT authorization)
++FTP client for Windows and Unix
+*Simple HTTP web request and responce (training before JWT authorization)
+*PostgreSQL usage
+*Logger usage
+*
+*
 
-
-123
-dfasfcsdf
-2019
-(c)Alexander Mashentsev
-312312312377777777777777777
+(c) Alexander Mashentsev younube93@gmail.com
+(c) Viktor Drozdenko
