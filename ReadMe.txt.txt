@@ -8,6 +8,6 @@ Simple HTTP web request and responce (training before JWT authorization)
 multi thread~~~
 
 
-2018
+2019
 (c)Alexander Mashentsev
 312312312377777777777777777
