@@ -70,7 +70,15 @@ namespace MagicApp
                 result = new byte[stream.Length];
                 await stream.ReadAsync(result, 0, (int) stream.Length);
             }
-            //123
+            //123фравр
+            //вапфваравф
+            //ыапфраврва
+            //ыпвафрвар
+            //фпрвапфавр
+            //фраврфвар
+            //фараврп
+            //фаврвар
+            //фаврвар
             var str = System.Text.Encoding.Default.GetString(result);
             _loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
             Console.WriteLine("Токен => \n");
