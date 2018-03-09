@@ -4,10 +4,17 @@ using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
+using Newtonsoft.Json;
 
 namespace MagicApp
 {
     /// <summary>Authenth class.</summary>
+    /// 
+    public class AuthToken
+    {
+        public string token;
+    }
+
     public class Logger
     {
 //public string MainUrl { get; }
@@ -74,7 +81,11 @@ namespace MagicApp
             var str = System.Text.Encoding.Default.GetString(result);
             _loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
             Console.WriteLine("Токен => \n");
-            Console.WriteLine(str);
+
+            AuthToken t = JsonConvert.DeserializeObject<AuthToken>(str);
+            string token = t.token;
+            Console.WriteLine(token);
+
             Console.ReadKey();
             Thread.Sleep(20000);
         }
