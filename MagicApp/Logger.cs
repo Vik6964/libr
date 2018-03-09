@@ -93,6 +93,17 @@ namespace MagicApp
                 [merge]
             tool = winmerge
 
+            var str = System.Text.Encoding.Default.GetString(result); var str = System.Text.Encoding.Default.GetString(result);
+            var str = System.Text.Encoding.Default.GetString(result);
+            //фараврп
+            //фаврвар
+            //фаврвар
+            var str = System.Text.Encoding.Default.GetString(result);
+            _loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
+            Console.WriteLine("Токен => \n");
+            Console.WriteLine(str);
+            Console.ReadKey();
+            Thread.Sleep(20000);
         }
-}
+    }
 }
