@@ -70,11 +70,13 @@ using (Stream stream = await responce.Content.ReadAsStreamAsync())
 }
 
 var str = System.Text.Encoding.Default.GetString(result);
-_loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
-Console.WriteLine("Токен => \n");
-Console.WriteLine(str);
-Console.ReadKey();
-Thread.Sleep(20000);
+хуйня //_loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
+хуйня //Console.WriteLine("Токен => \n");
+хуйня //Console.WriteLine(str);
+хуйня //Console.ReadKey();
+хуйня //Thread.Sleep(20000);
+/*}
 }
 }
-}
+
+*/
