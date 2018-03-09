@@ -69,6 +69,12 @@ namespace MagicApp
             var str = System.Text.Encoding.Default.GetString(result);
             _loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
             Console.WriteLine("Токен => \n");
+
+            /*var serializer = new JavaScriptSerializer();
+            serializer.RegisterConverters(new[] { new DynamicJsonConverter() });
+
+            dynamic obj = serializer.Deserialize(str, typeof(object));*/
+
             Console.WriteLine(str);
             Console.ReadKey();
             Thread.Sleep(20000);
