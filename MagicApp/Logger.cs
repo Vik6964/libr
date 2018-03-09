@@ -70,34 +70,7 @@ namespace MagicApp
                 result = new byte[stream.Length];
                 await stream.ReadAsync(result, 0, (int) stream.Length);
             }
-            [user]
-            name = xaknem
-            email = younube93@gmail.com
-                [core]
-            autocrlf = true
 
-            safecrlf = warn
-                [alias]
-            co = checkout
-            ci = commit
-            st = status
-            br = branch
-            hist = log--pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-            type = cat-file -t
-            dump = cat - file - p
-                       [winUpdater]
-
-            recentlySeenVersion = 2.15.1.windows.2
-                [credential]
-            helper = manager
-                [merge]
-            tool = winmerge
-
-            var str = System.Text.Encoding.Default.GetString(result); var str = System.Text.Encoding.Default.GetString(result);
-            var str = System.Text.Encoding.Default.GetString(result);
-            //фараврп
-            //фаврвар
-            //фаврвар
             var str = System.Text.Encoding.Default.GetString(result);
             _loggerClient.DefaultRequestHeaders.Add("Auth-Token", str);
             Console.WriteLine("Токен => \n");
