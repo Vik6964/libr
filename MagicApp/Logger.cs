@@ -72,10 +72,13 @@ namespace MagicApp
             }
             //123фравр
             //вапфваравф
-            //ыапфраврва
-            //ыпвафрвар
-            //фпрвапфавр
-            //фраврфвар
+            / var str = System.Text.Encoding.Default.GetString(result);
+            var str = System.Text.Encoding.Default.GetString(result);
+            var str = System.Text.Encoding.Default.GetString(result);
+            var str = System.Text.Encoding.Default.GetString(result);
+
+            var str = System.Text.Encoding.Default.GetString(result); var str = System.Text.Encoding.Default.GetString(result);
+            var str = System.Text.Encoding.Default.GetString(result);
             //фараврп
             //фаврвар
             //фаврвар
